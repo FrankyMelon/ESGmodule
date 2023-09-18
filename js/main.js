@@ -4,6 +4,9 @@ const pageCount = pages.length-1
 const nextButton = document.querySelector("#navigationNext")
 const prevButton = document.querySelector("#navigationPrev")
 const exploreLinks = document.querySelectorAll(".exploreImage")
+const progressBar = document.querySelectorAll(".progress-bar-info")
+
+console.log(progressBar)
 
 nextButton.addEventListener("click", function() {
 
@@ -45,3 +48,17 @@ exploreLinks.forEach(link => {
         document.getElementById(linkID+"_text").classList.add("selected")
     })
 })
+
+// Progress bar
+const ProgressBarStepValue = 100/pageCount 
+let ProgressBarValue = 0
+
+for (let i = 1; i <= pageCount; i++) {
+
+ProgressBarValue += ProgressBarStepValue
+let ProgressBarValueRound =  Math.round(ProgressBarValue)
+
+progressBar[i].textContent = ProgressBarValueRound+"%"
+progressBar[i].style.width = ProgressBarValueRound+"%";
+
+}
