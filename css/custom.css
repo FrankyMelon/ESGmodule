@@ -42,7 +42,6 @@ h3 {
 
 .header.row {
   padding:0;
-  /* height: 56px; */
 }
 
 .header h1 {
@@ -74,7 +73,6 @@ h1.ref_header {
 
 #mainStage {
   width:100%;
-  /* width:1000px; */
   margin: 0px auto 50px auto;
   border:1px solid #11335d;
 }
@@ -82,14 +80,6 @@ h1.ref_header {
 .row {
   padding:15px 10px 10px 10px;
   margin:0;
-}
-
-
-
-.header.row:after, .header.row:before {
-  /* display: table;
-  content: " ";
-  margin-bottom: inherit; */
 }
 
 .col-sm-4, .col-sm-6, .col-sm-8 {
@@ -100,8 +90,6 @@ h1.ref_header {
 .col-sm-4:nth-child(2), .col-sm-6:nth-child(2), .col-sm-8:nth-child(2) {
 	padding-left:15px;
 }
-
-
 
 .progress {
   border-radius: 10px;
@@ -499,7 +487,6 @@ hr {
 }
 
 .exploreLinks {
-	/* width:325px; */
 	display: flex;
 	flex-flow: wrap;
 	justify-content: flex-start;
@@ -658,16 +645,16 @@ ul.item_style_none {list-style:none;}
 }
 
 @media (max-width: 768px) {
-	body {font-size:11px;}
-	.header h1 {font-size: 17px;}
+  body {font-size:11px;}
+  .header h1 {font-size: 17px;}
 	h3 {font-size:13px;}
 	figcaption  {font-size:10px;}
 	.note_tooltip {font-size:9px;}
 .navigation a {
-	font-size:10px;
+  font-size:10px;
 	vertical-align:middle;
 	height:30px;
-padding: 8px 8px;
+  padding: 8px 8px;
 }
 .arrow-left, .arrow-right {margin-top:-2px;}
 }
