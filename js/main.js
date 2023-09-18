@@ -9,12 +9,23 @@ const links = document.querySelectorAll(`a[id]`)
 let eventsList = 'click keypress'.split(' ')
 
 
+// Event listener on keydown
+document.addEventListener('keydown', (event) => {
+    switch (event.key) {
+        case "ArrowLeft":
+            prevButtonFn()
+            break;
+        case "ArrowRight":
+            nextButtonFn()
+            break;
+      }
+  }, false)
+
 eventsList.forEach(event => nextButton.addEventListener(event, nextButtonFn))
 eventsList.forEach(event => prevButton.addEventListener(event, prevButtonFn))
 exploreLinks.forEach(link => {
     eventsList.forEach(event => link.addEventListener(event, exploreLinksFn))
 })
-
 
 function nextButtonFn() {
 
@@ -53,7 +64,7 @@ function exploreLinksFn() {
         this.classList.add("selected")
         const linkID = this.getAttribute("id")
         document.getElementById(linkID+"_text").classList.add("selected")
-    }
+}
 
 // Progress bar
 const ProgressBarStepValue = 100/pageCount 
