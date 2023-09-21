@@ -8,6 +8,16 @@ const progressBar = document.querySelectorAll(".progress-bar-info")
 const links = document.querySelectorAll(`a[id]`)
 let eventsList = 'click keypress'.split(' ')
 
+const modal = document.querySelector(".modal.noClosePop")
+const ModalCloseButton = document.querySelector("button.close")
+
+ModalCloseButton.addEventListener("click", () => {
+    console.log("yes")
+    modal.setAttribute("class", "hide")
+})
+
+console.log(ModalCloseButton)
+
 
 // Event listener on keydown
 document.addEventListener('keydown', (event) => {
@@ -37,6 +47,9 @@ function nextButtonFn() {
     }
     else {
         nextButton.setAttribute("class", "disabled")
+    }
+    if (currentPage === pageCount) {
+        modal.toggleAttribute("class")
     }
 }
 

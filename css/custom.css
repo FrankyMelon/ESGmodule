@@ -61,6 +61,7 @@ h1.ref_header {
 
 .jumbotron p {
   font-size: 1em;
+  margin-bottom: .3em;
 }
 
 #mainStage {
@@ -360,6 +361,12 @@ a.exploreImage.selected img.img-explore {
   display:block;
 }
 
+.modal-content button.close {
+  padding: 5px 10px;
+  margin: 0;
+  font-size: 2em;
+}
+
 .modal-header {
   background-color:#bead83;
   color:#fff;
@@ -369,6 +376,8 @@ a.exploreImage.selected img.img-explore {
 .modal-footer, .modal-body {
   background-color:#FFF!important;
 }
+
+
 
 .panel-body.multiSelectFeedback {
   background-color:#ccc!important;
@@ -401,6 +410,8 @@ hr {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: flex-start;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .exploreLinks p {margin-bottom:5px;}
@@ -415,8 +426,8 @@ hr {
 	flex-direction: row;
 	justify-content: center;
 	align-items: baseline;
-	padding:7px;
-	margin:6px;
+	padding:.3em;
+	margin:.1em;
 	cursor: pointer;
   letter-spacing: .3;
 }
@@ -585,8 +596,8 @@ p.introduction {
 
 /* Sec Ruling */
 
-div .row:nth-child(2) {margin-bottom:0; padding-bottom:10px;}
-div .row:nth-child(3) {margin-top:0; padding-top:10px;}
+/* div .row:nth-child(2) {margin-bottom:0; padding-bottom:10px;}
+div .row:nth-child(3) {margin-top:0; padding-top:10px;} */
 
 
 .modal-header {
@@ -682,5 +693,9 @@ div .row:nth-child(3) {margin-top:0; padding-top:10px;}
   body {
     font-size: 1em;
     width:100%;
+  }
+  div.row {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
